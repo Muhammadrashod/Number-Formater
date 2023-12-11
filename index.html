@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Проверка номера телефона</title>
+  </head>
+  <body>
+    <label for="phoneNumber">Введите номер телефона:</label>
+    <input
+      type="text"
+      id="phoneNumber"
+      placeholder="+998 (11) 123-45-67"
+      oninput="formatPhoneNumberInput(this)"
+    />
+    <button onclick="checkPhoneNumber()">Проверить номер</button>
+    <button onclick="removeData()">Удалить</button>
+    <p id="result"></p>
+    <script src="main.js"></script>
+  </body>
+</html>
